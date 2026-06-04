@@ -6,7 +6,17 @@ BUILD="$DIST/snxworks-community-health-check"
 ZIP="$DIST/snxworks-community-health-check.zip"
 rm -rf "$DIST"
 mkdir -p "$BUILD"
-rsync -a "$ROOT/" "$BUILD/"   --exclude='.git'   --exclude='.github'   --exclude='dist'   --exclude='tests'   --exclude='docs'   --exclude='README.md'   --exclude='composer.json'   --exclude='scripts'   --exclude='.gitignore'
+rsync -a "$ROOT/" "$BUILD/" \
+  --exclude='.git' \
+  --exclude='.github' \
+  --exclude='.wordpress-org' \
+  --exclude='dist' \
+  --exclude='tests' \
+  --exclude='docs' \
+  --exclude='README.md' \
+  --exclude='composer.json' \
+  --exclude='scripts' \
+  --exclude='.gitignore'
 if command -v zip >/dev/null 2>&1; then
   (cd "$DIST" && zip -qr "$ZIP" snxworks-community-health-check)
 else

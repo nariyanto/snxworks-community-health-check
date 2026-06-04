@@ -21,6 +21,7 @@ required = {
 forbidden_prefixes = (
     'snxworks-community-health-check/.git/',
     'snxworks-community-health-check/.github/',
+    'snxworks-community-health-check/.wordpress-org/',
     'snxworks-community-health-check/tests/',
     'snxworks-community-health-check/scripts/',
     'snxworks-community-health-check/dist/',

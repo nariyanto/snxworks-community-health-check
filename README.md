@@ -38,3 +38,7 @@ python3 scripts/validate-release-zip.py
 ## Version policy
 
 The plugin stays at `0.1.0` until it is published in the WordPress.org Plugin Directory.
+
+## Verification evidence
+
+Clean-install evidence and screenshot notes live in [`docs/verification-evidence.md`](docs/verification-evidence.md). WordPress.org screenshot candidates are stored in `.wordpress-org/assets/` and are excluded from the runtime ZIP.
