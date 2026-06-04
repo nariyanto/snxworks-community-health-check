@@ -1,0 +1,33 @@
+{
+  "name": "nariyanto/snxworks-community-health-check",
+  "description": "Read-only health checks for WordPress community sites using PeepSo and BuddyPress.",
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Septiyan Nariyanto",
+      "homepage": "https://nariyanto.id"
+    }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "composer/installers": "^2.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "SNXWorks\\CommunityHealthCheck\\": "src/"
+    }
+  },
+  "support": {
+    "issues": "https://github.com/nariyanto/snxworks-community-health-check/issues",
+    "source": "https://github.com/nariyanto/snxworks-community-health-check"
+  },
+  "keywords": [
+    "wordpress",
+    "peepso",
+    "buddypress",
+    "community",
+    "health-check",
+    "support"
+  ]
+}
